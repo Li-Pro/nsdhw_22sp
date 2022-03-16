@@ -18,7 +18,7 @@ check: $(EXE)
 	$(EXE) | tee result.txt
 
 clean:
-	rm -rf $(BUILD_DIR)
+	rm -rf $(BUILD_DIR) result.txt
 
 $(EXE): $(OBJ)
 #	essentially `ld -o $@ $(OBJ)` but rely on GCC's collect utility

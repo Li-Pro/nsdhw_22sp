@@ -14,7 +14,7 @@ test: $(LIBVECTOR)
 	env PYTHONPATH=".:$$PYTHONPATH" python3 -m pytest -v
 
 clean:
-	rm -rf $(LIBVECTOR)
+	rm -rf $(LIBVECTOR) __pycache__
 
 $(LIBVECTOR): $(CPP)
 	c++ \
